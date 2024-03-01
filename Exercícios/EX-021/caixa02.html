@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: lightgray;
+            margin: 0px;
+        }
+        header{
+            background-color: grey;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: blueviolet;
+            padding: 50px;
+            border-radius: 20px;
+            
+        }
+        nav > a{
+            text-decoration: none;
+            color:  white;
+            font-weight: bold;
+            margin-right: 30px;
+            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.404);
+            
+            
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: inset2px 2px 5px 1px rgba(0, 0, 0, 0.404);
+            border-radius: 10px 0px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: red;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 1px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        .bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos"></section>
+        <Section id="notícias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, esse maiores. Ad est laudantium temporibus a neque ut quasi exercitationem iste assumenda cupiditate! Distinctio quidem molestias laboriosam, beatae odit saepe.</p>
+                <aside>
+                    <p>Artigo escrito por José da silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </Section>
+
+    </main>
+    <footer>
+        <p>desenvoilvido pelo curso em vídeo</p>
+    </footer>
+    <div class="bola">bola</div>
+</body>
+</html>
