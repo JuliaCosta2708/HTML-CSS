@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Materials+Icons">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <svg 
+       id="burguer-menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368" onclick="clickmenu()"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        <menu id="items">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando media Queries</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum aliquid, ad eaque aliquam quia ut! Accusamus repellendus aut minus illo fugiat iure! Exercitationem necessitatibus odio voluptas aspernatur explicabo error aut.
+            Eos laboriosam eveniet nam? Culpa eos et aspernatur beatae doloribus illum numquam saepe quae eum, libero minus, sunt corporis possimus architecto error mollitia odio natus eligendi placeat maiores ea dignissimos!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum aliquid, ad eaque aliquam quia ut! Accusamus repellendus aut minus illo fugiat iure! Exercitationem necessitatibus odio voluptas aspernatur explicabo error aut.
+            Eos laboriosam eveniet nam? Culpa eos et aspernatur beatae doloribusillum numquam saepe quae eum, libero minus, sunt corporis possimusarchitecto error mollitia odio natus eligendi placeat maiores eadignissimos!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsumaliquid, ad eaque aliquam quia ut! Accusamus repellendus aut minus illofugiat iure! Exercitationem necessitatibus odio voluptas aspernaturexplicabo error aut.
+            Eos laboriosam eveniet nam? Culpa eos et aspernatur beatae doloribuillum numquam saepe quae eum, libero minus, sunt corporis possimuarchitecto error mollitia odio natus eligendi placeat maiores edignissimos!</p>
+        </article>
+    </main>
+
+    <script>
+       function clickmenu(){
+        if (items.style.display == 'block'){
+            items.style.display = 'none'
+        } else{
+            items.style.display = 'block'
+        }
+       }
+    </script>
+</body>
+</html>
