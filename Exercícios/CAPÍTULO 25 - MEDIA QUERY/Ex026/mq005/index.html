@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mediaquery.css" media="all">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Materials+Icons">
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <h1>Meu Site</h1>
         <svg 
@@ -42,6 +43,20 @@
             items.style.display = 'block'
         }
        }
+
+       function mudoutamanho() {
+            var items = document.getElementById('items');
+            if (window.innerWidth >= 768){
+                items.style.display = 'block';
+            } else {
+                items.style.display = 'none';
+            }
+        }
+
+
+          // Chamar a função inicialmente para definir o estado correto no carregamento da página
+        window.addEventListener('load', mudoutamanho);
+        window.addEventListener('resize', mudoutamanho);
     </script>
 </body>
 </html>
